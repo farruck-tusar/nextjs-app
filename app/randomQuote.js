@@ -1,4 +1,4 @@
-// components/RandomQuote.js
+"use client";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -15,12 +15,13 @@ const RandomQuote = () => {
       }
     };
 
-    fetchRandomQuote();
+    if (typeof window !== 'undefined') {
+      fetchRandomQuote();
+    }
   }, []);
 
   return (
     <div>
-      <h2>Random Quote</h2>
       <blockquote>{quote}</blockquote>
     </div>
   );
