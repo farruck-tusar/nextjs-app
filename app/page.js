@@ -39,7 +39,6 @@ export default function Home() {
         />
       </div>
       <main>
-        <h1>My Favorite Quote:</h1>
         <RandomQuote />
       </main>
 
