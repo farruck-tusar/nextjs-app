@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import styles from './RandomQuote.module.css';
+import styles from './randomQuote.module.css';
 
 const RandomQuote = () => {
   const [quote, setQuote] = useState('');

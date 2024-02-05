@@ -1,36 +1,30 @@
 /* components/RandomQuote.module.css */
 .randomQuoteContainer {
-    animation: fadeIn 1s ease;
-    text-align: center;
-    height: 150px; /* Set a fixed height for the quote container */
-    overflow: hidden; /* Hide overflow content */
+  animation: fadeIn 1s ease;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  height: 200px;
+}
+
+.randomQuoteTitle {
+  color: #3498db;
+  font-size: 1.5rem;
+}
+
+.randomQuote {
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .randomQuoteTitle {
-    color: #3498db;
+  to {
+    opacity: 1;
   }
-  
-  .randomQuote {
-    color: #333;
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .randomQuoteTitle:hover {
-    color: #e74c3c;
-  }
-  
-  .randomQuote:hover {
-    color: #2ecc71;
-    background-color: initial; /* Set background-color to initial on hover */
-  }
-  
+}
